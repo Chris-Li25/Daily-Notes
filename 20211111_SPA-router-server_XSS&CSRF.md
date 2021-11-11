@@ -5,6 +5,7 @@
 1. webpack打包生成后的index.html不能跳转路由
 2. SPA需要服务器才能正常浏览吗
 3. 只需一个静态资源服务器即可浏览，这个服务器的作用是什么
+3. 服务器类型、作用、区别
 
 
 
@@ -12,16 +13,36 @@
 
 ##### SPA应用路由实现有两种方法：
 
-1. hash模式
+1. ##### hash模式
+   
    - 使用location.hash和hashchange事件实现路由
-2. history模式
+2. ##### history模式
+   
    - 使用html5的history api实现，主要就是popState事件等
 
 
 
+hash模式进行路由可以直接使用file://的方式打开页面
 
 
-##### [网络相关解释](https://www.5axxw.com/questions/content/3cw9ad)
+
+如果直接使用file://的方式打开页面，就会出现下面的情况
+
+```javascript
+Uncaught SecurityError: A history state object with URL 'file:///C:/xxx/xxx/xxx/xxx.html' cannot be created in a document with origin 'null'.
+```
+
+因为pushState的url和当前的Url必须是同源的，而file://的形式是不存在同源的说法的，所以我们必须用http://localhost的方式，可使用本地服务器进行测试
+
+
+
+#### 参考资料
+
+##### [SPA路由核心原理](https://zhuanlan.zhihu.com/p/296769602)
+
+##### [单页面应用路由的两种实现方式 ](https://www.cnblogs.com/zhuzhenwei918/p/7421430.html)
+
+##### [单页应用程序相关问题](https://www.5axxw.com/questions/content/3cw9ad)
 
 > 单页应用程序需要一个服务器来服务它所需的`.css`、`index.html`和`.js`文件。SPA完全不需要通过任何方式与应用服务器通信。
 >
