@@ -35,3 +35,11 @@ const images = requireContext.keys().map(requireContext);
 
 上述代码可以读取对应文件夹中所有图片
 
+
+
+## 参考资料
+
+[使用require.context实现前端工程自动化](https://www.jianshu.com/p/c894ea00dfec)
+
+[react中引入大量图片](https://blog.csdn.net/qq_39081974/article/details/93044916)
+
