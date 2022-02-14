@@ -34,10 +34,6 @@ ECMAScript Module，现在使用的模块方案，使用 `import` `export` 来�
 
 
 
-
-
-
-
 # 参考资料
 
 [cjs, umd, esm or iife?](https://zhuanlan.zhihu.com/p/304552279)
