@@ -26,6 +26,18 @@ ECMAScript Module，现在使用的模块方案，使用 `import` `export` 来�
 
 
 
+# DDoS
+
+**Distributed denial of service attack  分布式拒绝服务攻击**
+
+分布式拒绝服务攻击可以使很多的计算机在同一时间遭受到攻击，使攻击的目标无法正常使用，分布式拒绝服务攻击已经出现了很多次，导致很多的大型网站都出现了无法进行操作的情况，这样不仅仅会影响用户的正常使用，同时造成的经济损失也是非常巨大的
+
+
+
+
+
+
+
 # 参考资料
 
 [cjs, umd, esm or iife?](https://zhuanlan.zhihu.com/p/304552279)
